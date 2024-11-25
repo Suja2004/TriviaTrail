@@ -1,0 +1,369 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fa;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  background-color: #0077b6;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .navLinks {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar .logoutButton {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar .logoutButton:hover {
+  background-color: #e60000;
+}
+
+/* Admin & User Home Styles */
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #0077b6;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  flex: 1 0 30%;
+  min-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Questions */
+.add-question-container {
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.add-question-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-question-input,
+.add-question-option {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.add-question-option{
+  width: 90%;
+  margin-left: 10%;
+}
+
+.correct{
+  background-color: rgb(148, 242, 148);
+  color: white;
+}
+
+.add-question-input:focus,
+.add-question-option:focus {
+  outline: none;
+  border-color: #0077b6;
+  box-shadow: 0 0 5px rgba(0, 119, 182, 0.3);
+}
+
+.add-question-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-question-button:hover {
+  background-color: #005f8c;
+}
+
+.add-question-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 95, 140, 0.3);
+}
+
+/* Quiz Styling */
+.quiz-container,
+.leaderboard,
+.results {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.quiz-container h2 {
+  text-align: center;
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+.quiz-container p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.quiz-container label {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.quiz-container .options {
+  background: #cde4d6;
+  border: 2px solid #4733ffa8;
+  margin: .5rem;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+
+.quiz-container .buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.quiz-container button {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px;
+  width: 100%;
+}
+
+.quiz-container button:hover {
+  background-color: #005f82;
+  transform: scale(1.05);
+}
+
+.quiz-container button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.quiz-container,
+.quiz-container * {
+  user-select: none;
+}
+
+/* Leaderboard */
+.category-buttons {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category-buttons button {
+  width: 200px;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #ddd;
+  color: #000;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-buttons button:hover {
+  background-color: #0077b6;
+  color: white;
+}
+
+.category-buttons button:hover,
+.category-buttons button:active {
+  background-color: #0077b6;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #9dce7c;
+  font-weight: bold;
+}
+
+table td {
+  background-color: #fff;
+}
+
+table tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+table tr:hover td {
+  background-color: #f1f1f1;
+}
+
+table td:first-child {
+  font-weight: bold;
+  color: #0077b6;
+}
+
+/* Login Form */
+.form {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.form input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form input:focus,
+select:focus {
+  outline: none;
+  border-color: #0077b6;
+  box-shadow: 0 0 4px rgba(0, 119, 182, 0.4);
+}
+
+.form select {
+  width: 95%;
+}
+
+.form button {
+  width: 95%;
+  padding: 10px;
+  background-color: #0077b6;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.link {
+  color: #0077b6;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.form button:hover {
+  background-color: #005f8c;
+}
+
+/* popup */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.popup-close-button {
+  max-width: 200px;
+  background-color: #0077b6;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
