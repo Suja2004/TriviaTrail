@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <h2 className="logo">QuizApp</h2>
+            <h2 className="logo">Trivia Trai</h2>
             <ul className="navLinks">
                 {!isLoggedIn ? (
                     <>
